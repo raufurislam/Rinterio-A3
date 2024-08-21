@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biker Zone</title>
+    <!-- DaisyUi and tailwinds cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome kit  -->
+    <script
+      src="https://kit.fontawesome.com/c67cdd3601.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "color-1": "#ABEF5F",
+              "color-2": "#212121",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="font-manrope bg-[#F4F4F4]">
+    <!-- Header  -->
+    <header class="bg-gradient-to-t from-[#FFFFFF] h-[1000px] w-full">
+      <nav class="md:container mx-auto bg-transparent pt-4">
+        <div class="navbar">
+          <!-- text starts -->
+          <div class="navbar-start">
+            <!-- name -->
+            <div class="flex justify-center items-center gap-2">
+              <div
+                class="h-8 w-8 bg-color-1 rounded-full flex items-center justify-center -rotate-45"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <a class="text-xl font-extrabold text-[32px]">Rinterio</a>
+            </div>
+            <!-- text ends -->
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-4 hidden sm:flex">
+            <div
+              class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+              <a class="btn rounded-full bg-color-1 font-extrabold"
+                >Book Consult
+                <div
+                  class="h-8 w-8 bg-color-2 text-white rounded-full flex items-center justify-center -rotate-45"
+                >
+                  <i class="fa-solid fa-arrow-right"></i></div
+              ></a>
+            </div>
+          </div>
+          <div
+            class="dropdown dropdown-end left-32 md left-0 lg:hidden h-8 h-8 bg-white rounded-full"
+          >
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main  -->
+    <main class="md:container mx-auto">
+      <section class="my-24"></section>
+    </main>
+    <!-- Footer  -->
+    <footer></footer>
+  </body>
+</html>
