@@ -45,7 +45,7 @@
   </head>
   <body class="font-manrope bg-[#F4F4F4]">
     <!-- Header  -->
-    <header class="bg-gradient-to-t from-[#FFFFFF] h-[1000px] w-full">
+    <header class="bg-gradient-to-t from-[#FFFFFF] h-[1000px] w-full p-4">
       <nav class="md:container mx-auto bg-transparent pt-4">
         <div class="navbar">
           <!-- text starts -->
@@ -91,38 +91,55 @@
               ></a>
             </div>
           </div>
-          <div
-            class="dropdown dropdown-end left-32 md left-0 lg:hidden h-8 h-8 bg-white rounded-full"
-          >
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+
+          <div class="lg:hidden">
+            <div
+              class="dropdown dropdown-end absolute right-0 px-4 text-center"
             >
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
+              <div
+                tabindex="0"
+                role="button"
+                class="w-12 h-12 rounded-full bg-white m-1 pt-3"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
+      <!-- Hero section  -->
+      <div class="md:container mx-auto text-center">
+        <img class="max-w-1/2 mx-auto" src="./image/banner.png" alt="" />
+        <h1 class="font-extrabold text-[28px] lg:text-[68px] lg:w-4/5 mx-auto">
+          A barn house of this design has a striking appearance
+        </h1>
+        <p class="lg:w-3/5 text-center mx-auto m-4">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents, and
+          large windows that flood the space with natural light.
+        </p>
+
+        <div>
+          <a
+            class="btn rounded-full bg-[rgba(171,239,95,0.5)] font-extrabold border border-color-1"
+            >Book Consult
+            <div
+              class="h-8 w-8 bg-color-1 text-color-2 rounded-full flex items-center justify-center -rotate-45"
+            >
+              <i class="fa-solid fa-arrow-right"></i></div
+          ></a>
+        </div>
+      </div>
     </header>
     <!-- Main  -->
     <main class="md:container mx-auto">
